@@ -29,9 +29,13 @@ The primary objective was to adapt the ASVP-ESD files to be compatible with the 
 
 The script can be executed from the command line with the following command:
 
-- To perform both restructuring and cleanup: `python script.py /path/to/your/directory --all`
+- To perform both restructuring and cleanup: `python emomerger.py /path/to/your/directory --merge`
 
-Replace `script.py` with the actual name of the Python script, and `/path/to/your/directory` with the actual path to the directory containing the files. The `--help` or `-h` flag is automatically provided by argparse and will display the help messages defined in the script.
+Where `/path/to/your/directory` is the folder where you have both datasets.
+
+If you have some tasks to complete before the cleanup, you can simply merge by executing these commands one by one:
+- `python emomerger.py /path/to/your/directory --restructure`
+- `python emomerger.py /path/to/your/directory --cleanup`
 
 ## Licensing
 
